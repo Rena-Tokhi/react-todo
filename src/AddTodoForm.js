@@ -4,7 +4,7 @@ function AddTodoForm(props) {
   function handleAddTodo(event) {
     event.preventDefault();
 
-    const todoTitle = event.target.titel.value;
+    const todoTitle = event.target.title.value;
     props.onAddTodo(todoTitle);
     console.log(todoTitle);
     event.target.reset();
@@ -14,7 +14,7 @@ function AddTodoForm(props) {
       <label htmlFor="todoTitle">Title</label>
       <input
         id="todoTitle"
-        name="titel"
+        name="title"
         placeholder="Enter title here..."
         required
       />
